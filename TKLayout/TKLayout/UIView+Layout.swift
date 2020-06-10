@@ -12,7 +12,7 @@ import UIKit
 
 // Reference Video: https://youtu.be/iqpAP7s3b-8
 
-extension UIView {
+public extension UIView {
     
     
     @discardableResult
@@ -145,11 +145,11 @@ extension UIView {
     }
 }
 
-struct AnchoredConstraints {
+public struct AnchoredConstraints {
     var top, leading, bottom, trailing, width, height: NSLayoutConstraint?
 }
 
-protocol LayoutGuideProvider {
+public protocol LayoutGuideProvider {
     var leadingAnchor: NSLayoutXAxisAnchor { get }
     var trailingAnchor: NSLayoutXAxisAnchor { get }
     var leftAnchor: NSLayoutXAxisAnchor { get }
@@ -164,7 +164,7 @@ protocol LayoutGuideProvider {
 
 extension UIView: LayoutGuideProvider { }
 extension UILayoutGuide: LayoutGuideProvider {}
-extension LayoutGuideProvider {
+public extension LayoutGuideProvider {
     var t: NSLayoutYAxisAnchor {
         return topAnchor
     }
@@ -178,7 +178,7 @@ extension LayoutGuideProvider {
         return trailingAnchor
     }
 }
-extension UIView {
+public extension UIView {
     var safeArea: LayoutGuideProvider {
         if #available(iOS 11, *) {
             return safeAreaLayoutGuide
