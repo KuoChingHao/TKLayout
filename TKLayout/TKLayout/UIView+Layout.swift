@@ -14,6 +14,7 @@ import UIKit
 
 extension UIView {
     
+    
     @discardableResult
     func anchor(top: NSLayoutYAxisAnchor? = nil, leading: NSLayoutXAxisAnchor? = nil, bottom: NSLayoutYAxisAnchor? = nil, trailing: NSLayoutXAxisAnchor? = nil, padding: UIEdgeInsets = .zero, size: CGSize = .zero) -> AnchoredConstraints {
         
@@ -121,17 +122,19 @@ extension UIView {
     }
     
     @discardableResult
-    func constrainWidth(constant: CGFloat) -> NSLayoutConstraint{
+    func constrainWidth(constant: CGFloat, priority: UILayoutPriority = .init(1000)) -> NSLayoutConstraint{
         translatesAutoresizingMaskIntoConstraints = false
         let constraint = widthAnchor.constraint(equalToConstant: constant)
+        constraint.priority = priority
         constraint.isActive = true
         return constraint
     }
     
     @discardableResult
-    func constrainHeight(constant: CGFloat)  -> NSLayoutConstraint{
+    func constrainHeight(constant: CGFloat, priority: UILayoutPriority = .init(1000))  -> NSLayoutConstraint{
         translatesAutoresizingMaskIntoConstraints = false
         let constraint = heightAnchor.constraint(equalToConstant: constant)
+        constraint.priority = priority
         constraint.isActive = true
         return constraint
     }

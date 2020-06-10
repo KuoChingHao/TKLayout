@@ -1,0 +1,16 @@
+PODS:
+  - TKLayout (0.0.1)
+
+DEPENDENCIES:
+  - TKLayout
+
+SPEC REPOS:
+  trunk:
+    - TKLayout
+
+SPEC CHECKSUMS:
+  TKLayout: 7cd5abbc28128bb15515e135a1e5fa6dcd5ba30b
+
+PODFILE CHECKSUM: 4c86e8524ebde8ebaff857e7b95ef8643935f376
+
+COCOAPODS: 1.9.1
