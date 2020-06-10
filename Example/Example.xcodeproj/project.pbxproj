@@ -16,6 +16,7 @@
 		22C6C6A92491336B004391D7 /* Setup1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C6C6A82491336B004391D7 /* Setup1ViewController.swift */; };
 		22C6C6AB249142EA004391D7 /* Setup2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C6C6AA249142EA004391D7 /* Setup2ViewController.swift */; };
 		22C6C6AD2491472E004391D7 /* Setup3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C6C6AC2491472E004391D7 /* Setup3ViewController.swift */; };
+		22C6C6AF249153D6004391D7 /* Setup4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C6C6AE249153D6004391D7 /* Setup4ViewController.swift */; };
 		A054F1D278D2691AFD703045 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7092AAF686D1D48AC4F8A4C6 /* Pods_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		22C6C6A82491336B004391D7 /* Setup1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setup1ViewController.swift; sourceTree = "<group>"; };
 		22C6C6AA249142EA004391D7 /* Setup2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setup2ViewController.swift; sourceTree = "<group>"; };
 		22C6C6AC2491472E004391D7 /* Setup3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setup3ViewController.swift; sourceTree = "<group>"; };
+		22C6C6AE249153D6004391D7 /* Setup4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setup4ViewController.swift; sourceTree = "<group>"; };
 		63B437DF64B21B90C8BF6A05 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		7092AAF686D1D48AC4F8A4C6 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -87,6 +89,7 @@
 				22C6C6A82491336B004391D7 /* Setup1ViewController.swift */,
 				22C6C6AA249142EA004391D7 /* Setup2ViewController.swift */,
 				22C6C6AC2491472E004391D7 /* Setup3ViewController.swift */,
+				22C6C6AE249153D6004391D7 /* Setup4ViewController.swift */,
 			);
 			path = Sample;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				22C6C69224912E87004391D7 /* AppDelegate.swift in Sources */,
 				22C6C6AD2491472E004391D7 /* Setup3ViewController.swift in Sources */,
 				22C6C6A92491336B004391D7 /* Setup1ViewController.swift in Sources */,
+				22C6C6AF249153D6004391D7 /* Setup4ViewController.swift in Sources */,
 				22C6C6AB249142EA004391D7 /* Setup2ViewController.swift in Sources */,
 				22C6C69424912E87004391D7 /* SceneDelegate.swift in Sources */,
 			);

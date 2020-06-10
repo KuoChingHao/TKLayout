@@ -18,7 +18,8 @@ class ViewController: UITableViewController {
     let data: [VCModel] = [
         VCModel(vc: Setup1ViewController(nibName: nil, bundle: nil), title: "fill superview"),
         VCModel(vc: Setup2ViewController(nibName: nil, bundle: nil), title: "anchor"),
-        VCModel(vc: Setup3ViewController(nibName: nil, bundle: nil), title: "center")
+        VCModel(vc: Setup3ViewController(nibName: nil, bundle: nil), title: "center"),
+        VCModel(vc: Setup4ViewController(nibName: nil, bundle: nil), title: "alignment")
     ]
     
     override func viewDidLoad() {
