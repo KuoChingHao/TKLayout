@@ -25,6 +25,7 @@ Pod::Spec.new do |spec|
   spec.author             = { "Tank" => "zxm55547@gmail.com" }
   spec.source       = { :git => 'https://github.com/KuoChingHao/TKLayout.git', :tag => spec.version.to_s }
   spec.source_files  = "TKLayout/TKLayout/**/*"
+  spec.exclude_files = "TKLayout/TKLayout/*.plist"
   spec.framework    = "UIKit"
   spec.ios.deployment_target = '9.0'
   spec.swift_version    = '5.0'
