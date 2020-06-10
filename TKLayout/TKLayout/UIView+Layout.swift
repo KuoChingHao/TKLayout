@@ -12,7 +12,8 @@ import UIKit
 
 // Reference Video: https://youtu.be/iqpAP7s3b-8
 
-extension UIView {
+public extension UIView {
+    
     
     @discardableResult
     func anchor(top: NSLayoutYAxisAnchor? = nil, leading: NSLayoutXAxisAnchor? = nil, bottom: NSLayoutYAxisAnchor? = nil, trailing: NSLayoutXAxisAnchor? = nil, padding: UIEdgeInsets = .zero, size: CGSize = .zero) -> AnchoredConstraints {
@@ -121,17 +122,19 @@ extension UIView {
     }
     
     @discardableResult
-    func constrainWidth(constant: CGFloat) -> NSLayoutConstraint{
+    func constrainWidth(constant: CGFloat, priority: UILayoutPriority = .init(1000)) -> NSLayoutConstraint{
         translatesAutoresizingMaskIntoConstraints = false
         let constraint = widthAnchor.constraint(equalToConstant: constant)
+        constraint.priority = priority
         constraint.isActive = true
         return constraint
     }
     
     @discardableResult
-    func constrainHeight(constant: CGFloat)  -> NSLayoutConstraint{
+    func constrainHeight(constant: CGFloat, priority: UILayoutPriority = .init(1000))  -> NSLayoutConstraint{
         translatesAutoresizingMaskIntoConstraints = false
         let constraint = heightAnchor.constraint(equalToConstant: constant)
+        constraint.priority = priority
         constraint.isActive = true
         return constraint
     }
@@ -142,11 +145,11 @@ extension UIView {
     }
 }
 
-struct AnchoredConstraints {
+public struct AnchoredConstraints {
     var top, leading, bottom, trailing, width, height: NSLayoutConstraint?
 }
 
-protocol LayoutGuideProvider {
+public protocol LayoutGuideProvider {
     var leadingAnchor: NSLayoutXAxisAnchor { get }
     var trailingAnchor: NSLayoutXAxisAnchor { get }
     var leftAnchor: NSLayoutXAxisAnchor { get }
@@ -161,7 +164,7 @@ protocol LayoutGuideProvider {
 
 extension UIView: LayoutGuideProvider { }
 extension UILayoutGuide: LayoutGuideProvider {}
-extension LayoutGuideProvider {
+public extension LayoutGuideProvider {
     var t: NSLayoutYAxisAnchor {
         return topAnchor
     }
@@ -175,7 +178,7 @@ extension LayoutGuideProvider {
         return trailingAnchor
     }
 }
-extension UIView {
+public extension UIView {
     var safeArea: LayoutGuideProvider {
         if #available(iOS 11, *) {
             return safeAreaLayoutGuide
