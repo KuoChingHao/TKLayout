@@ -178,6 +178,55 @@ public extension UIView {
         constraint.isActive = true
         return constraint
     }
+    
+    @discardableResult
+    func alignmentTop(to view: UIView, constant: CGFloat, priority: UILayoutPriority = .init(1000)) -> NSLayoutConstraint {
+        let constraint = topAnchor.constraint(equalTo: view.topAnchor, constant: constant)
+        constraint.priority = priority
+        constraint.isActive = true
+        return constraint
+    }
+    
+    @discardableResult
+    func alignmentBottom(to view: UIView, constant: CGFloat, priority: UILayoutPriority = .init(1000)) -> NSLayoutConstraint {
+        let constraint = bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: constant)
+        constraint.priority = priority
+        constraint.isActive = true
+        return constraint
+    }
+
+    @discardableResult
+    func alignmentLeading(to view: UIView, constant: CGFloat, priority: UILayoutPriority = .init(1000)) -> NSLayoutConstraint {
+        let constraint = leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: constant)
+        constraint.priority = priority
+        constraint.isActive = true
+        return constraint
+    }
+    
+    @discardableResult
+    func alignmentTrailing(to view: UIView, constant: CGFloat, priority: UILayoutPriority = .init(1000)) -> NSLayoutConstraint {
+        let constraint = trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: constant)
+        constraint.priority = priority
+        constraint.isActive = true
+        return constraint
+    }
+    
+    @discardableResult
+    func alignmentCenterX(to view: UIView, constant: CGFloat, priority: UILayoutPriority = .init(1000)) -> NSLayoutConstraint {
+        let constraint = centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: constant)
+        constraint.priority = priority
+        constraint.isActive = true
+        return constraint
+    }
+    
+    @discardableResult
+    func alignmentCenterY(to view: UIView, constant: CGFloat, priority: UILayoutPriority = .init(1000)) -> NSLayoutConstraint {
+        let constraint = centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: constant)
+        constraint.priority = priority
+        constraint.isActive = true
+        return constraint
+    }
+    
 }
 
 public struct AnchoredConstraints {
