@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Setup3ViewController: UIViewController {
+class Setup3ViewController: BaseViewController {
 
     private let label1 : UILabel = {
         let label = UILabel()
@@ -30,8 +30,6 @@ class Setup3ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        view.backgroundColor = .white
         
         view.addSubview(label1)
         label1.centerInSuperview(size: .init(width: 100, height: 100))

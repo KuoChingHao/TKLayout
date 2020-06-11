@@ -8,7 +8,14 @@
 
 import UIKit
 import TKLayout
-class Setup1ViewController: UIViewController {
+
+class BaseViewController: UIViewController {
+    override func viewDidLoad() {
+        view.backgroundColor = .white
+    }
+}
+
+class Setup1ViewController: BaseViewController {
 
     private let customView1 : UIView = {
         let view = UIView()

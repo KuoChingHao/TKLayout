@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Setup4ViewController: UIViewController {
+class Setup4ViewController: BaseViewController {
 
     private let label1 : UILabel = {
         let label = UILabel()
@@ -28,6 +28,15 @@ class Setup4ViewController: UIViewController {
         return label
     }()
     
+    private let label3 : UILabel = {
+        let label = UILabel()
+        label.text = "leading"
+        label.font = UIFont.systemFont(ofSize: 20)
+        label.textColor = .black
+        label.backgroundColor = .brown
+        return label
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,6 +45,11 @@ class Setup4ViewController: UIViewController {
         
         view.addSubview(label2)
         label2.anchor(top: label1.topAnchor, leading: label1.trailingAnchor, bottom: label2.bottomAnchor)
+        
+        view.addSubview(label3)
+        label3.anchor(trailing: label1.leadingAnchor)
+        label3.alignmentCenterY(to: label1)
+
     }
     
 

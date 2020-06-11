@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Setup2ViewController: UIViewController {
+class Setup2ViewController: BaseViewController {
 
     private let label : UILabel = {
         let label = UILabel()
@@ -49,7 +49,6 @@ class Setup2ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
         
         view.addSubview(label)
         label.anchor(top: view.topAnchor, leading: view.leadingAnchor)
