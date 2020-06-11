@@ -1,5 +1,5 @@
 PODS:
-  - TKLayout (0.0.1)
+  - TKLayout (0.0.5)
 
 DEPENDENCIES:
   - TKLayout
@@ -9,7 +9,7 @@ SPEC REPOS:
     - TKLayout
 
 SPEC CHECKSUMS:
-  TKLayout: 7cd5abbc28128bb15515e135a1e5fa6dcd5ba30b
+  TKLayout: 787f0000739b01fd6f6bc103cbc91e568f5e97c1
 
 PODFILE CHECKSUM: 4c86e8524ebde8ebaff857e7b95ef8643935f376
 
