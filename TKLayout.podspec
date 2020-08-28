@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "TKLayout"
-  spec.version      = "0.0.5"
+  spec.version      = "0.0.6"
   spec.summary      = "Easy to use AutoLayout."
 
   spec.description  = <<-DESC
