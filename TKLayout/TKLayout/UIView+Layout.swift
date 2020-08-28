@@ -162,9 +162,27 @@ public extension UIView {
     }
     
     @discardableResult
+    func equalWidth(to view: UIView, multiplier: CGFloat = 0, constant: CGFloat = 0, priority: UILayoutPriority = .init(1000)) -> NSLayoutConstraint {
+        translatesAutoresizingMaskIntoConstraints = false
+        let constraint = widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: multiplier, constant: constant)
+        constraint.priority = priority
+        constraint.isActive = true
+        return constraint
+    }
+    
+    @discardableResult
     func constrainHeight(constant: CGFloat, priority: UILayoutPriority = .init(1000))  -> NSLayoutConstraint {
         translatesAutoresizingMaskIntoConstraints = false
         let constraint = heightAnchor.constraint(equalToConstant: constant)
+        constraint.priority = priority
+        constraint.isActive = true
+        return constraint
+    }
+    
+    @discardableResult
+    func equalHeight(to view: UIView, multiplier: CGFloat = 0, constant: CGFloat = 0, priority: UILayoutPriority = .init(1000)) -> NSLayoutConstraint {
+        translatesAutoresizingMaskIntoConstraints = false
+        let constraint = heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: multiplier, constant: constant)
         constraint.priority = priority
         constraint.isActive = true
         return constraint
