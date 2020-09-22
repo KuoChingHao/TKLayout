@@ -162,7 +162,7 @@ public extension UIView {
     }
     
     @discardableResult
-    func equalWidth(to view: UIView, multiplier: CGFloat = 0, constant: CGFloat = 0, priority: UILayoutPriority = .init(1000)) -> NSLayoutConstraint {
+    func equalWidth(to view: UIView, multiplier: CGFloat = 1, constant: CGFloat = 0, priority: UILayoutPriority = .init(1000)) -> NSLayoutConstraint {
         translatesAutoresizingMaskIntoConstraints = false
         let constraint = widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: multiplier, constant: constant)
         constraint.priority = priority
@@ -180,7 +180,7 @@ public extension UIView {
     }
     
     @discardableResult
-    func equalHeight(to view: UIView, multiplier: CGFloat = 0, constant: CGFloat = 0, priority: UILayoutPriority = .init(1000)) -> NSLayoutConstraint {
+    func equalHeight(to view: UIView, multiplier: CGFloat = 1, constant: CGFloat = 0, priority: UILayoutPriority = .init(1000)) -> NSLayoutConstraint {
         translatesAutoresizingMaskIntoConstraints = false
         let constraint = heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: multiplier, constant: constant)
         constraint.priority = priority
