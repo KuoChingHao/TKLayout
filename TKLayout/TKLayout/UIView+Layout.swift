@@ -199,6 +199,7 @@ public extension UIView {
     
     @discardableResult
     func alignmentTop(to view: UIView, constant: CGFloat = 0, priority: UILayoutPriority = .init(1000)) -> NSLayoutConstraint {
+        translatesAutoresizingMaskIntoConstraints = false
         let constraint = topAnchor.constraint(equalTo: view.topAnchor, constant: constant)
         constraint.priority = priority
         constraint.isActive = true
@@ -207,6 +208,7 @@ public extension UIView {
     
     @discardableResult
     func alignmentBottom(to view: UIView, constant: CGFloat = 0, priority: UILayoutPriority = .init(1000)) -> NSLayoutConstraint {
+        translatesAutoresizingMaskIntoConstraints = false
         let constraint = bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: constant)
         constraint.priority = priority
         constraint.isActive = true
@@ -215,6 +217,7 @@ public extension UIView {
 
     @discardableResult
     func alignmentLeading(to view: UIView, constant: CGFloat = 0, priority: UILayoutPriority = .init(1000)) -> NSLayoutConstraint {
+        translatesAutoresizingMaskIntoConstraints = false
         let constraint = leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: constant)
         constraint.priority = priority
         constraint.isActive = true
@@ -223,6 +226,7 @@ public extension UIView {
     
     @discardableResult
     func alignmentTrailing(to view: UIView, constant: CGFloat = 0, priority: UILayoutPriority = .init(1000)) -> NSLayoutConstraint {
+        translatesAutoresizingMaskIntoConstraints = false
         let constraint = trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: constant)
         constraint.priority = priority
         constraint.isActive = true
@@ -231,6 +235,7 @@ public extension UIView {
     
     @discardableResult
     func alignmentCenterX(to view: UIView, constant: CGFloat = 0, priority: UILayoutPriority = .init(1000)) -> NSLayoutConstraint {
+        translatesAutoresizingMaskIntoConstraints = false
         let constraint = centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: constant)
         constraint.priority = priority
         constraint.isActive = true
@@ -239,6 +244,7 @@ public extension UIView {
     
     @discardableResult
     func alignmentCenterY(to view: UIView, constant: CGFloat = 0, priority: UILayoutPriority = .init(1000)) -> NSLayoutConstraint {
+        translatesAutoresizingMaskIntoConstraints = false
         let constraint = centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: constant)
         constraint.priority = priority
         constraint.isActive = true
