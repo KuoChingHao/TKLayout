@@ -254,7 +254,8 @@ public extension UIView {
 }
 
 public struct AnchoredConstraints {
-    var top, leading, bottom, trailing, width, height, centerX, centerY: NSLayoutConstraint?
+    public init(){}
+    public var top, leading, bottom, trailing, width, height, centerX, centerY: NSLayoutConstraint?
     func active(){
         [top, leading, bottom, trailing, width, height,centerX,centerY].forEach{ $0?.isActive = true }
     }
